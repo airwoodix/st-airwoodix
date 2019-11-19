@@ -4,7 +4,10 @@
 # Contributor: Christoph Vigano <mail@cvigano.de>
 # Contributor: Etienne Wodey <airwoodix@posteo.me>
 
-pkgname=st
+pkgname=st-airwoodix
+_pkgname=st
+provides=("${_pkgname}")
+conflicts=("${_pkgname}")
 pkgver=0.8.2
 pkgrel=10
 pkgdesc='A simple virtual terminal emulator for X.'
@@ -13,7 +16,7 @@ license=('MIT')
 depends=(libxft ttf-inconsolata)
 url=https://st.suckless.org
 _theme_hdr=base16-monokai-theme.h
-source=(https://dl.suckless.org/$pkgname/$pkgname-$pkgver.tar.gz
+source=(https://dl.suckless.org/$_pkgname/$_pkgname-$pkgver.tar.gz
         terminfo.patch
 	style.patch
         README.terminfo.rst
@@ -23,7 +26,7 @@ sha256sums=('aeb74e10aa11ed364e1bcc635a81a523119093e63befd2f231f8b0705b15bf35'
             '7e118a270a317e6d77f606398b082e75855961c85a6a50b8959ca637f31b61ac'
             '0ebcbba881832adf9c98ce9fe7667c851d3cc3345077cb8ebe32702698665be2'
             'a14dc67856890cda511adbdc4a55503212ef5127c5345696d546b5407cc2baab')
-_sourcedir=$pkgname-$pkgver
+_sourcedir=$_pkgname-$pkgver
 _makeopts="--directory=$_sourcedir"
 
 prepare() {
