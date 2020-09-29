@@ -15,7 +15,7 @@ arch=('i686' 'x86_64' 'armv7h')
 license=('MIT')
 depends=(libxft ttf-inconsolata)
 url=https://st.suckless.org
-_theme_hdr=base16-monokai-theme.h
+_theme_hdr=base16-atelier-plateau-light-theme.h
 source=(https://dl.suckless.org/$_pkgname/$_pkgname-$pkgver.tar.gz
         terminfo.patch
 	style.patch
@@ -23,9 +23,9 @@ source=(https://dl.suckless.org/$_pkgname/$_pkgname-$pkgver.tar.gz
 	https://raw.githubusercontent.com/honza/base16-st/b3d0d4fbdf86d9b3eda06f42a5bdf261b1f7d1d1/build/"$_theme_hdr")
 sha256sums=('aeb74e10aa11ed364e1bcc635a81a523119093e63befd2f231f8b0705b15bf35'
             'bf6c8b73a606a8e513c7919d91f93ed7aeb5f44e80269bb244cc01659145a5ea'
-            '7e118a270a317e6d77f606398b082e75855961c85a6a50b8959ca637f31b61ac'
+            '7152d2be66dd0bb3f978b0e12ef3678bf6a6d8fd94ab954e5eab8c87569d853d'
             '0ebcbba881832adf9c98ce9fe7667c851d3cc3345077cb8ebe32702698665be2'
-            'a14dc67856890cda511adbdc4a55503212ef5127c5345696d546b5407cc2baab')
+            '4ffca5df2651111576a645da4fd0a8fc91e6c403e00a11cecda3bfa9ee48bd4f')
 _sourcedir=$_pkgname-$pkgver
 _makeopts="--directory=$_sourcedir"
 
