@@ -13,9 +13,9 @@ pkgrel=10
 pkgdesc='A simple virtual terminal emulator for X.'
 arch=('i686' 'x86_64' 'armv7h')
 license=('MIT')
-depends=(libxft adobe-source-code-pro-fonts)
+depends=(libxft ttf-fira-code)
 url=https://st.suckless.org
-_theme_hdr=base16-atelier-plateau-light-theme.h
+_theme_hdr=base16-atelier-forest-theme.h
 source=(https://dl.suckless.org/$_pkgname/$_pkgname-$pkgver.tar.gz
         terminfo.patch
 	style.patch
@@ -23,9 +23,9 @@ source=(https://dl.suckless.org/$_pkgname/$_pkgname-$pkgver.tar.gz
 	https://raw.githubusercontent.com/honza/base16-st/b3d0d4fbdf86d9b3eda06f42a5bdf261b1f7d1d1/build/"$_theme_hdr")
 sha256sums=('aeb74e10aa11ed364e1bcc635a81a523119093e63befd2f231f8b0705b15bf35'
             'bf6c8b73a606a8e513c7919d91f93ed7aeb5f44e80269bb244cc01659145a5ea'
-            '7152d2be66dd0bb3f978b0e12ef3678bf6a6d8fd94ab954e5eab8c87569d853d'
+            '8e5f2f0c711dad9e28a0a795539a1e10e7a82814f3c520842aa05f5ddded6ad0'
             '0ebcbba881832adf9c98ce9fe7667c851d3cc3345077cb8ebe32702698665be2'
-            '4ffca5df2651111576a645da4fd0a8fc91e6c403e00a11cecda3bfa9ee48bd4f')
+            '137c63386a7e37a3cc6817a4c4013aff844216b562e39919fd025265c6b75920')
 _sourcedir=$_pkgname-$pkgver
 _makeopts="--directory=$_sourcedir"
 
